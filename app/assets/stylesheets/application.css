@@ -44,3 +44,11 @@
   #test {
       background-color: #dd5268;
   }
+
+  /* TOPのCSS */
+  div.program{
+    border: solid;
+    border-color: #031de2;
+    display: inline-block;
+}
+
