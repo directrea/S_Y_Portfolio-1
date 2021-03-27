@@ -45,3 +45,14 @@ div#container p {
   padding: 10px;
 }
 
+/* CertificatesのCSS */
+div#block {
+  margin: 20px;
+}
+
+.certificates_list{
+  padding-left: 30px;
+  margin-bottom: 20px;
+  border-color: black;
+  border: solid;
+}
