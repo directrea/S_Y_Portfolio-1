@@ -1,2 +1,0 @@
-class CarrerController < ApplicationController
-end
