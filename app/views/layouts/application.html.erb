@@ -11,19 +11,25 @@
   </head>
 
   <body>
-  <header>
-    <h1 class="headline">
-      データサイエンティスト<br>ポートフォリオサイト
-    </h1>
-    <ul class="nav-list">
-      <li class="nav-list-item">
-        <a><%= link_to "Home", :root %></a>
-      </li>
-      <li class="nav-list-item"><%= link_to "hobby", :hobby %></li>
-      <li class="nav-list-item"><%= link_to "Profile", :profile %></li>
-    </ul>
-  </header>
-  
-    <%= yield %>
+    <div>
+      <header>
+        <h1 class="headline">
+          <%= link_to raw("データサイエンティスト<br/>ポートフォリオサイト"), :root, id:"top" %>
+        </h1>
+        <img src="/assets/meishi2.jpg" alt="名刺"  id="business_card">
+      </header>
+    </div>
+    <div id="main">
+      <%= yield %>
+    </div>
+    <footer> 
+      <nav id="nav_list">
+        <ul>
+          <li><%= link_to "保有スキル", "/certificates" %></li>
+          <li><%= link_to "経歴", "/career" %></li>
+          <li><%= link_to "挫折の経験", "/setback" %></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
